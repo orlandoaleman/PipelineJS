@@ -3,7 +3,7 @@ var router = express.Router();
 
 
 router.get("/", function(req,res) {
-    var timeout = Math.floor(2000 * Math.random());
+    var timeout = Math.floor(5000 * Math.random());
     console.log("Timeout: " + timeout);
 
     res.write(Array(1025).join("a"));
